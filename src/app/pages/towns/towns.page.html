@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>{{type}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card *ngFor="let town of towns" (click)="selectedIndex = i" [routerLink]="town" [class.selected]="selectedIndex == i">
+    <ion-card-header>
+      <ion-card-title>
+        {{town}}
+      </ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>

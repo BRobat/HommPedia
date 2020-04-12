@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{town}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let creature of creatures" >
+    <ion-card-header>
+      <ion-card-title>
+        {{creature.Name}}
+      </ion-card-title>
+      <ion-card-content>
+        <p>
+         Attack: {{creature.Att}}
+        </p>
+        <p>
+          Defense: {{creature.Def}}
+        </p>
+        <p>
+          Damage: {{creature.minDmg}} : {{creature.maxDmg}}
+        </p>
+        <p>
+          HP: {{creature.HP}}
+        </p>
+        <p>
+          Spd: {{creature.Spd}}
+        </p>
+        <p>
+          Grw: {{creature.Grw}}
+        </p>
+        <p>
+          Cost: {{creature.Cost}}
+        </p>
+        <p>
+          Val: {{creature.Val}}
+        </p>
+      </ion-card-content>
+    </ion-card-header>
+  </ion-card>
+</ion-content>
