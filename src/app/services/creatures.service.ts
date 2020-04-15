@@ -228,7 +228,7 @@ export class CreaturesService {
       "Special": "Poisonous",
       "Town": "Cove",
       "Cost": "2200 ",
-      "Special cost": "s1 "
+      "SpecialCost": "s1 "
     },
     {
       "Name": " Haspid ",
@@ -246,7 +246,7 @@ export class CreaturesService {
       "Special": "Poisonous, Revenge",
       "Town": "Cove",
       "Cost": "4000 ",
-      "Special cost": "s2 "
+      "SpecialCost": "s2 "
     },
     {
       "Name": " Pikeman ",
@@ -455,7 +455,7 @@ export class CreaturesService {
       "Special": "Flying, Hates Devils, Morale +1",
       "Town": "Castle",
       "Cost": "3000 ",
-      "Special cost": "g1 "
+      "SpecialCost": "g1 "
     },
     {
       "Name": " Archangel ",
@@ -473,7 +473,7 @@ export class CreaturesService {
       "Special": "Flying, Hates Devils, Resurrection, Morale +1",
       "Town": "Castle",
       "Cost": "5000 ",
-      "Special cost": "g3"
+      "SpecialCost": "g3"
     },
     {
       "Name": " Centaur ",
@@ -487,7 +487,7 @@ export class CreaturesService {
       "Grw": "14",
       "Val": "100",
       "35 ": "90 ",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "70 "
     },
     {
@@ -502,7 +502,7 @@ export class CreaturesService {
       "Grw": "14",
       "Val": "138",
       "35 ": "120 ",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "90 "
     },
     {
@@ -518,7 +518,7 @@ export class CreaturesService {
       "Val": "138",
       "35 ": "150 ",
       "Special": "Resistance +20%",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "120 "
     },
     {
@@ -534,7 +534,7 @@ export class CreaturesService {
       "Val": "209",
       "35 ": "200 ",
       "Special": "Resistance +40%",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "150 "
     },
     {
@@ -550,7 +550,7 @@ export class CreaturesService {
       "Val": "234",
       "35 ": "225 ",
       "Special": "Ranged (24 shots)",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "200 "
     },
     {
@@ -566,7 +566,7 @@ export class CreaturesService {
       "Val": "331",
       "35 ": "250 ",
       "Special": "Ranged (24 shots), Double attack",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "225 "
     },
     {
@@ -582,7 +582,7 @@ export class CreaturesService {
       "Val": "518",
       "35 ": "275 ",
       "Special": "Flying, Magic damper",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "250 "
     },
     {
@@ -598,7 +598,7 @@ export class CreaturesService {
       "Val": "532",
       "35 ": "350 ",
       "Special": "Flying, Magic damper",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "275 "
     },
     {
@@ -614,7 +614,7 @@ export class CreaturesService {
       "Val": "517",
       "35 ": "425 ",
       "Special": "Binding",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "350 "
     },
     {
@@ -630,7 +630,7 @@ export class CreaturesService {
       "Val": "803",
       "35 ": "850 ",
       "Special": "Binding",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "425 "
     },
     {
@@ -646,7 +646,7 @@ export class CreaturesService {
       "Val": "1806",
       "35 ": "950 ",
       "Special": "Blind, Aura of Resistance+20%",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "850 "
     },
     {
@@ -662,7 +662,7 @@ export class CreaturesService {
       "Val": "2030",
       "35 ": "2400 ",
       "Special": "Blind, Aura of Resistance+20%",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "950 "
     },
     {
@@ -679,9 +679,9 @@ export class CreaturesService {
       "35 ": "4000 ",
       " Special": ", 1  ",
       "Special": "Flying, Breath attack, Resist lvl 1–3 spells",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "2400 ",
-      "Special cost": "k1 "
+      "SpecialCost": "k1 "
     },
     {
       "Name": " Gold Dragon ",
@@ -697,9 +697,9 @@ export class CreaturesService {
       "35 ": "30 ",
       " Special": ", 2  ",
       "Special": "Flying, Breath attack, Resist lvl 1–4 spells",
-      "Town": "Bastion",
+      "Town": "Rampart",
       "Cost": "4000 ",
-      "Special cost": "k2"
+      "SpecialCost": "k2"
     },
     {
       "Name": " Gremlin ",
@@ -908,7 +908,7 @@ export class CreaturesService {
       "Special": "Immunity to Mind",
       "Town": "Tower",
       "Cost": "2000 ",
-      "Special cost": "g1 "
+      "SpecialCost": "g1 "
     },
     {
       "Name": " Titan ",
@@ -926,7 +926,7 @@ export class CreaturesService {
       "Special": "Ranged (24 shots), No melee penalty, Immunity to Mind, Hates Black Dragons",
       "Town": "Tower",
       "Cost": "5000 ",
-      "Special cost": "g2"
+      "SpecialCost": "g2"
     },
     {
       "Name": " Imp ",
@@ -1131,7 +1131,7 @@ export class CreaturesService {
       "Special": "Teleporting, No enemy retaliation, Luck -1, HatesAngels",
       "Town": "Inferno",
       "Cost": "2700 ",
-      "Special cost": "m1 "
+      "SpecialCost": "m1 "
     },
     {
       "Name": " Arch Devil ",
@@ -1149,7 +1149,7 @@ export class CreaturesService {
       "Special": "Teleporting, No enemy retaliation, Luck -2, HatesAngels",
       "Town": "Inferno",
       "Cost": "4500 ",
-      "Special cost": "m2"
+      "SpecialCost": "m2"
     },
     {
       "Name": " Skeleton ",
@@ -1375,7 +1375,7 @@ export class CreaturesService {
       "Special": "Dragon, Undead, Flying, Morale -1, Aging",
       "Town": "Necropolis",
       "Cost": "3000 ",
-      "Special cost": "m1 "
+      "SpecialCost": "m1 "
     },
     {
       "Name": " Troglodyte ",
@@ -1585,7 +1585,7 @@ export class CreaturesService {
       "Special": "Dragon, Flying, Breath attack, 1-3 lvl spells immunity",
       "Town": "Dungeon",
       "Cost": "2500 ",
-      "Special cost": "s1 "
+      "SpecialCost": "s1 "
     },
     {
       "Name": " Black Dragon ",
@@ -1603,7 +1603,7 @@ export class CreaturesService {
       "Special": "Dragon, Flying, Breath attack, Magic immunity, Hates Titans",
       "Town": "Dungeon",
       "Cost": "4000 ",
-      "Special cost": "s2 "
+      "SpecialCost": "s2 "
     },
     {
       "Name": " Goblin ",
@@ -1825,7 +1825,7 @@ export class CreaturesService {
       "Special": "Defense -80% to enemy target",
       "Town": "Stronghold",
       "Cost": "3000 ",
-      "Special cost": "k1 "
+      "SpecialCost": "k1 "
     },
     {
       "Name": " Gnoll ",
@@ -2048,7 +2048,7 @@ export class CreaturesService {
       "Special": "No enemy retaliation, Attack all adjacent enemies",
       "Town": "Fortress",
       "Cost": "3500 ",
-      "Special cost": "s1 "
+      "SpecialCost": "s1 "
     },
     {
       "Name": " Pixie ",
@@ -2274,7 +2274,7 @@ export class CreaturesService {
       "Special": "Flying, Breath attack, Immune to fire spells, Rebirth",
       "Town": "Conflux",
       "Cost": "3000 ",
-      "Special cost": "m1"
+      "SpecialCost": "m1"
     },
     {
       "Name": " Peasant ",
@@ -2530,7 +2530,7 @@ export class CreaturesService {
       "Special": "Dragon, Flying, Spellcaster, Magic Mirror",
       "Town": "Neutral",
       "Cost": "10000 ",
-      "Special cost": "g8"
+      "SpecialCost": "g8"
     },
     {
       "Name": " Rust Dragon ",
@@ -2548,7 +2548,7 @@ export class CreaturesService {
       "Special": "Dragon, Flying, Breath, Acid breath",
       "Town": "Neutral",
       "Cost": "15000 ",
-      "Special cost": "s14"
+      "SpecialCost": "s14"
     },
     {
       "Name": " Crystal Dragon ",
@@ -2566,7 +2566,7 @@ export class CreaturesService {
       "Special": "Dragon, Crystal generation, Magic resistance +20%",
       "Town": "Neutral",
       "Cost": "20000 ",
-      "Special cost": "k10"
+      "SpecialCost": "k10"
     },
     {
       "Name": " Azure Dragon ",
@@ -2583,7 +2583,7 @@ export class CreaturesService {
       "Special": "Dragon, Flying, Breath, Fear, Resist lvl 1–3 spells, Resist Fear",
       "Town": "Neutral",
       "Cost": "30000 ",
-      "Special cost": "m20"
+      "SpecialCost": "m20"
     }
   ]
 
@@ -2594,6 +2594,9 @@ export class CreaturesService {
     return this.creatures.filter(x => x.Town == town);
   }
 
+  getSelectedCreature(creature) {
+    return this.creatures.find(x => x.Name == creature);
+  }
 
 
 }

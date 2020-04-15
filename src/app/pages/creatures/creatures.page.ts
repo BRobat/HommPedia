@@ -9,16 +9,31 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class CreaturesPage implements OnInit {
 
-  public creatures = []
-  public town: string;
+  creatures = [];
+  tableOfCreatures = [];
+  town: string;
 
-  constructor(private creaturesService: CreaturesService, private activatedRoute: ActivatedRoute) {
-    this.creatures = this.creaturesService.getCreaturesFromTown(this.town);
-    console.log(this.creatures)
-   }
+  constructor(private creaturesService: CreaturesService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
     this.town = this.activatedRoute.snapshot.paramMap.get('id');
+    this.creatures = this.creaturesService.getCreaturesFromTown(this.town);
+    this.tableOfCreatures = this.sortCreatures(this.creatures);
   }
+
+  sortCreatures(creatures) {
+    let newArray = []
+    creatures.map((c) => {
+      if (c.Lvl.length < 2) {
+        newArray.push([c])
+      }
+      else {
+        let char = c.Lvl.charAt(0);
+        newArray[char-1].push(c);
+      }
+    })
+    return newArray
+  }
+
 
 }

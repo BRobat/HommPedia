@@ -1,5 +1,8 @@
 {
   "name": "HommPedia",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
   "type": "angular"
 }
