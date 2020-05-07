@@ -31,6 +31,11 @@ export class AppComponent implements OnInit {
       title: 'Spells',
       url: '/magic-schools',
       icon: 'book'
+    },
+    {
+      title: 'Calculators',
+      url: '/calculators',
+      icon: 'calculator'
     }
   ];
 

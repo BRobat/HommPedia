@@ -2598,5 +2598,15 @@ export class CreaturesService {
     return this.creatures.find(x => x.Name == creature);
   }
 
+  getAllCreatures() {
+    return this.creatures;
+  }
+
+  SearchCreatures(name) {
+    return this.creatures.filter(x => x.Name )
+  }
+
+
+
 
 }

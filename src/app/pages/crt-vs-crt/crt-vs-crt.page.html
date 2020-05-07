@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Creature vs Creature</ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon name="help-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-select slot="start" placeholder="select first creature" interface="action-sheet"
+        (ionChange)="chooseFirstCreature($event)">
+        <ion-select-option *ngFor="let creature of creatures" [value]="creature"> {{creature.Name}} </ion-select-option>
+      </ion-select>
+      <ion-input slot="end" placeholder="no." type="number" (ionChange)="numberOfFirstCreatures"></ion-input>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <ion-item>
+      <ion-select slot="start" placeholder="select second creature" interface="action-sheet"
+        (ionChange)="chooseSecondCreature($event)">
+        <ion-select-option *ngFor="let creature of creatures" [value]="creature"> {{creature.Name}} </ion-select-option>
+      </ion-select>
+      <ion-input slot="end" placeholder="no." type="number" (ionChange)="numberOfSecondCreatures"></ion-input>
+    </ion-item>
+  </ion-card>
+
+  <ion-card>
+    
+  </ion-card>
+
+
+
+</ion-content>

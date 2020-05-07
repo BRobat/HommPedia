@@ -6,147 +6,96 @@
     <ion-title>{{town}}</ion-title>
   </ion-toolbar>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-card-content *ngFor="let creature of tableOfCreatures">
-    <ion-card-title>Lvl {{creature[0].Lvl}} {{creature[0].Name}} + {{creature[1].Name}}</ion-card-title>
-    <ion-grid>
-      <ion-col>
-        <ion-row>
-          <ion-col>
-            Attack
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Att}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Defense
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Def}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Damage
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.minDmg}}-{{c.maxDmg}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Speed
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Spd}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            HP
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.HP}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Growth
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Grw}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Value
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Val}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Cost
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Cost}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Additional Cost
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.SpecialCost}}
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col>
-            Special
-
-          </ion-col>
-          <ion-col *ngFor="let c of creature">
-            {{c.Special}}
-          </ion-col>
-        </ion-row>
-      </ion-col>
-
-
-    </ion-grid>
-  </ion-card-content>
-
-</ion-content>
-
-<!-- <ion-card *ngFor="let creature of creatures">
-  <ion-card-header>
-    <ion-card-title>
-      {{creature.Name}}
-    </ion-card-title>
-    <ion-card-content>
-      <p>
-        <ion-icon slot="start" [ios]="cash-outline" [md]="cash"></ion-icon>
-        Attack: {{creature.Att}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="heart-outline" [md]="heart"></ion-icon>
-        Defense: {{creature.Def}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="cash-outline" [md]="cash"></ion-icon>
-        Damage: {{creature.minDmg}}-{{creature.maxDmg}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="heart-outline" [md]="heart"></ion-icon>
-        HP: {{creature.HP}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="cash-outline" [md]="cash"></ion-icon>
-        Speed: {{creature.Spd}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="cash-outline" [md]="cash"></ion-icon>
-        Growth: {{creature.Grw}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="cash-outline" [md]="cash"></ion-icon>
-        Cost: {{creature.Cost}}
-      </p>
-      <p>
-        <ion-icon slot="start" [ios]="transgender-outline" [md]="transgender"></ion-icon>
-        Value: {{creature.Val}}
-      </p>
+  <ion-card *ngFor="let creature of tableOfCreatures">
+    <ion-card-content >
+      <ion-card-title>Lvl {{creature[0].Lvl}} <div *ngFor="let c of creature">
+        {{c.Name}}
+      </div></ion-card-title>
+      <ion-grid>
+        <ion-col>
+          <ion-row>
+            <ion-col>
+              Attack
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Att}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Defense
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Def}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Damage
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.minDmg}}-{{c.maxDmg}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              HP
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.HP}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Speed
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Spd}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Growth
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Grw}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Value
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Val}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Cost
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Cost}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              +Cost
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.SpecialCost}}
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col>
+              Special
+            </ion-col>
+            <ion-col *ngFor="let c of creature">
+              {{c.Special}}
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-grid>
     </ion-card-content>
-  </ion-card-header>
-</ion-card> -->
+  </ion-card>
+</ion-content>

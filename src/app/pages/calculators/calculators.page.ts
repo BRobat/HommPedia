@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CalculatorsPage implements OnInit {
 
+  calculators = [
+    {
+      title: 'Creature vs Creature',
+      url: '/calculators/crt-vs-crt',
+      icon: 'bug'
+    }
+  ]
+
   constructor() { }
 
   ngOnInit() {

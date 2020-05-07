@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'calculators',
     loadChildren: () => import('./pages/calculators/calculators.module').then( m => m.CalculatorsPageModule)
+  },
+  {
+    path: 'calculators/crt-vs-crt',
+    loadChildren: () => import('./pages/crt-vs-crt/crt-vs-crt.module').then( m => m.CrtVsCrtPageModule)
   }
 ];
 
