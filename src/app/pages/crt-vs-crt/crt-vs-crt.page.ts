@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CreaturesService } from 'src/app/services/creatures.service';
+import { Creature } from 'src/app/model/creature';
 
 
 @Component({
@@ -10,8 +11,9 @@ import { CreaturesService } from 'src/app/services/creatures.service';
 export class CrtVsCrtPage implements OnInit {
 
   creatures = [];
-  firstCreature;
-  secondCreature;
+  firstCreature: Creature;
+  secondCreature: Creature;
+  someFknArray = [];
 
   constructor(private creaturesService: CreaturesService) { }
 
@@ -29,12 +31,59 @@ export class CrtVsCrtPage implements OnInit {
     this.secondCreature = $event.target.value
   }
 
-  fight() {
-
+  battle() {
+    this.fight(this.firstCreature, this.secondCreature, 10, 10)
   }
 
-  hit(crt1, crt2, no1, no2) {
+  fight(crt1: Creature, crt2: Creature, num1, num2) {
+    let someFknArray = [];
+    let health1 = crt1.HP * num1
+    let health2 = crt2.HP * num2
+    let currentNum1 = num1
+    let currentNum2 = num2
+    let isCrt1turn = true;
+    let id = 1;
+
+    //here determine if there is retaliation or not
     
+    while(health1 > 0 && health2 > 0) {
+      // console.log("isCrt1turn: ", isCrt1turn, "health1: ", health1, "health2", health2, "currentNum1", currentNum1, "currentNum2", currentNum2  )
+
+      // there should be a function for calculating stuff. Or not. I dnt kno
+      if(isCrt1turn) {
+        health2 -= this.hit(crt1, currentNum1)
+        currentNum2 = health2 / crt2.HP
+        if(false) {
+          health1 -= this.hit(crt2, currentNum1)
+          currentNum1 = health1 / crt1.HP
+        }
+      }
+
+      if(!isCrt1turn) {
+        health1 -= this.hit(crt2, currentNum1)
+        currentNum1 = health1 / crt1.HP
+        if(false) {
+          health2 -= this.hit(crt1, currentNum1)
+          currentNum2 = health2 / crt2.HP
+        }
+      }
+
+      someFknArray.push({
+        "health1": health1,
+        "health2": health2,
+        "currentNum1": currentNum1,
+        "currentNum2": currentNum2,
+        "id": id
+      });
+      //push to some list
+      isCrt1turn != isCrt1turn;
+      id++
+    }
+    this.someFknArray = someFknArray;
+  }
+
+  hit(a,b) {
+    return a.maxDmg * b
   }
 
 

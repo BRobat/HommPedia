@@ -33,9 +33,18 @@
   </ion-card>
 
   <ion-card>
-    
-  </ion-card>
+    <ion-button (click)="battle()">battle</ion-button>
 
+  </ion-card>
+  <ion-card>
+    <ion-item *ngFor="let e of someFknArray">
+      turn {{e.id}}:
+      health1: {{e.health1}}
+      health2: {{e.health2}}
+      currentNum1: {{e.currentNum1}}
+      currentNum2: {{e.currentNum2}}
+    </ion-item>
+  </ion-card>
 
 
 </ion-content>
